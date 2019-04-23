@@ -8,7 +8,7 @@ void Thread::run()
 {
     while ( !m_stopped )
     {
-        std::cout << std::this_thread::get_id() << "\n";
+        std::cout << "running: " << std::this_thread::get_id() << "\n";
         std::this_thread::sleep_for( 1s );
     }
 
